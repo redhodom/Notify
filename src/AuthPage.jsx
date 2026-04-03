@@ -9,8 +9,8 @@ const AuthPage = () => {
 
       {/* LEFT SIDE IMAGE */}
       <div className="auth-left">
-        <img src="/noti2.0.png" alt="logo" className="main-img" />
-        <img src="/noti3.png" alt="glow" className="bg-img" />
+        <img src="noti2.0.png" alt="logo" className="main-img" />
+        <img src="noti3.png" alt="glow" className="bg-img" />
       </div>
 
       <div className="auth-center">
@@ -29,7 +29,7 @@ const AuthPage = () => {
         <div className="auth-box">
 
           {/* LOGO */}
-          <img src="/noti1.png" className="small-logo" />
+          <img src="noti1.png" className="small-logo" />
 
           {/* TOGGLE */}
           <div className="auth-toggle">

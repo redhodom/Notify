@@ -203,7 +203,7 @@ const AudioPort = () => {
       {/* PROFILE */}
       {activeTab === "profile" && (
         <div className={styles.profileBox}>
-          <img src="/noti1.png" />
+          <img src="noti1.png" />
           <h4>Jeeva Freezee</h4>
           <p>Frontend Dev • UI Designer</p>
         </div>

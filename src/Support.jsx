@@ -13,8 +13,8 @@ const Support = () => {
       <div className="support-hero">
 
         <div className="hero-left">
-          <img src="/noti2.0.png" className="hero-img" />
-          <img src="/noti3.png" className="hero-glow" />
+          <img src="noti2.0.png" className="hero-img" />
+          <img src="noti3.png" className="hero-glow" />
         </div>
 
         <div className="hero-right">
@@ -46,7 +46,7 @@ const Support = () => {
 
         <div className="team-card">
 
-          <img src="/noti1.png" />
+          <img src="noti1.png" />
 
           <h3>Jeeva Freezee</h3>
 

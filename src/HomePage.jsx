@@ -5,6 +5,7 @@ import songs from "./data/songs";
 import artists from "./data/Artist";
 import notify from "/notilogo.png";
 import './App.css';
+import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   const [currentSong, setCurrentSong] = useState(null);
@@ -51,19 +52,19 @@ useEffect(() => {
       {/* RIGHT */}
       <div className="right">
 
-        <button 
+        <nav className={`menu ${menuOpen ? 'active' : ''}`}>
+          <Link to="/auth" onClick={() => setMenuOpen(false)}>Sign-up</Link>
+          <Link to="/auth" onClick={() => setMenuOpen(false)}>Login</Link>
+          <Link to="/Support" onClick={() => setMenuOpen(false)}>Support</Link>
+          <Link to="#" onClick={() => setShowPlaylist(true)}>Playlist</Link>
+        </nav>
+
+         <button 
           className="nav-toggle" 
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
         </button>
-
-        <nav className={`menu ${menuOpen ? 'active' : ''}`}>
-          <a href="/auth" onClick={() => setMenuOpen(false)}>Sign-up</a>
-          <a href="/auth" onClick={() => setMenuOpen(false)}>Login</a>
-          <a href="/support" onClick={() => setMenuOpen(false)}>Support</a>
-          <a href="#" onClick={() => setShowPlaylist(true)}>Playlist</a>
-        </nav>
 
       </div>
 
